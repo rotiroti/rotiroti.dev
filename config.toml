@@ -1,0 +1,57 @@
+baseURL = "https://rotiroti.dev"
+languageCode = "en-us"
+footnoteReturnLinkContents = "↩"
+title = "ROTIROTI.DEV"
+paginate = 5
+theme = "PaperMod"
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+googleAnalytics = "UA-188050367-1"
+
+[minify]
+    disableXML = true
+
+[params]
+    env = "production"
+    author = "Marco Rotiroti"
+    description = "Marco Rotiroti's personal website."
+    defaultTheme = "auto"
+    disableThemeToggle = false
+
+    [params.assets]
+        disableHLJS = true
+        disableFingerprinting = true
+        favicon = "favicon.ico"
+        favicon16x16 = "favicon-16x16.png"
+        favicon32x32 = "favicon-32x32.png"
+        apple_touch_icon = "apple-touch-icon.png"
+
+    [params.profileMode]
+        enabled = true
+        description = "Marco Rotiroti's personal website."
+        imageUrl = "images/me.jpeg"
+        imageTitle = "Marco Rotiroti"
+        imageWidth = 200
+        imageHeight = 200
+
+
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/marcorotiroti/"
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/rotiroti"
+
+    [[params.socialIcons]]
+        name = "hackerrank"
+        url = "https://www.hackerrank.com/rotiroti"
+
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
